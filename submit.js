@@ -1,7 +1,7 @@
 import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
 
 var editor = ace.edit("editor");
-editor.setTheme("ace/theme/gruvbox");
+editor.setTheme("ace/theme/one_dark");
 editor.session.setMode("ace/mode/c_cpp");
 editor.setKeyboardHandler("ace/keyboard/vscode");
 
@@ -12,8 +12,10 @@ var vim = false;
 
 function toggle_vim(){
     if (vim == false){
+        editor.setOption("relativeLineNumbers", true)
         editor.setKeyboardHandler("ace/keyboard/vim");
     } else {
+        editor.setOption("relativeLineNumbers", false)
         editor.setKeyboardHandler("ace/keyboard/vscode");
     }
     vim ^= 1;
@@ -28,7 +30,7 @@ function submit(){
         document.getElementById("submit").style.display = "inline-block";
     } else {
         document.getElementById("resp").innerHTML = "Waiting for judge...";
-        const socket = io("http://127.0.0.1:3000");
+        const socket = io("https://ericJudge.nonrice.repl.co");
         socket.on("connect", () => {
             socket.emit("run", code, id);
         });

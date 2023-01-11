@@ -5,7 +5,7 @@
 res2=$(mktemp)
 res1=$(mktemp)
 
-mem=$(timeout $4 gtime 2>&1 --quiet -f%M $1 < $3 > $res1)
+mem=$(timeout $4 $(which time) 2>&1 --quiet -f%M $1 < $3 > $res1)
 ret=$?
 
 if [ $ret -eq 124 ]; then
