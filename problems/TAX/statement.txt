@@ -1,0 +1,30 @@
+Problem: Tax
+
+Limits:
+Time=1s Memory=256mb
+
+Statement:
+In Farmer John's town, money is issued in bills with denominations in powers of 2, starting from 1. Farmer John needs to pay a list of "n" taxes. For each tax amount, what is the minimum amount of bills he can use?
+
+Input Format:
+First line of input is integer "n" (1<=n<=1e5).
+Next "n" lines each contain a single integer- the tax amount. Integer is guaranteed in the range [1, 1e9].
+
+Output Format:
+Output "n" lines, each containing the minimum number of bills to use on the corresponding tax amount.
+
+Sample Input:
+3 
+15
+4
+6
+
+Sample Output:
+4
+1
+2
+
+Sample Explanation:
+To pay tax of $15, Farmer John can use bill combination of: $1, $2, $4, $8, which is 4 bills in total.
+To pay tax of $4, Farmer John can use a single $4 bill.
+To pay tax of $6, Farmer John can use bill combination of: $2, $4

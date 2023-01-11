@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>EricJudge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.14.0/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="module" src="submit.js"></script>
+
+    <h1>Welcome to Eric's Online Judge</h1>
+    </h4>
+        <a href="index.html">Home Page</a> | 
+        <a href="problems.html">View Problemset</a> | 
+        <a href="submit.html">Submit Code</a>
+    </h4>
+    <h3>Submit Code</h3>
+    <p>Code will be compiled as follows: <code>g++ file.cpp -std=c++17 -O2</code></p>
+    <input type="checkbox" id="vim">VIM MODE</input>
+    <div id="editor" style="height:400px; width:500px;"></div>
+    <div>
+        <br>
+        <input id="id" placeholder="Submission ID"></input>
+        <button id="submit">Go!</button>
+    </div>
+    <h3>Response</h3>
+    <pre id="resp">No response yet</pre>
+</body>
+</html>
+
