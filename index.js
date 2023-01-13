@@ -74,10 +74,12 @@ io.on("connection", (socket) => {
             const ver = shell("./run_util/run.sh " + sub + " " + sol + " problems/" + id + "/input/" + tc + ".txt" + " " + tl + " " + ml).slice(0,-1);
             if (ver != "OK"){
                 io.emit("upd_msg", "Failed on testcase " + tc + " (" + ver + ")");
+                console.log("Guy failed on " + id);
                 clearInterval(runner)
             }
             if (tc++ == tcs){
                 io.emit("upd_msg", "Accepted");
+                console.log("Guy AC'd on " + id);
                 clearInterval(runner)
             }
         });

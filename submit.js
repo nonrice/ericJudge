@@ -1,7 +1,6 @@
 import { io } from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js";
 
 var editor = ace.edit("editor");
-editor.setTheme("ace/theme/one_dark");
 editor.session.setMode("ace/mode/c_cpp");
 editor.setKeyboardHandler("ace/keyboard/vscode");
 
