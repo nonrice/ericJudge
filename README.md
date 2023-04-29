@@ -1,6 +1,6 @@
 # EricJudge
 
-This is a very simple online judge I made. Only C++17 supported right now.
+This is a very simple online judge I made. Only C++17 supported right now. Try it here: [ericjudge.nonrice.repl.co/](ericjudge.nonrice.repl.co/)
 
 ### How to use:
 1. Read the problem statement from the problemset
