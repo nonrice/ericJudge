@@ -13,7 +13,7 @@ const httpserver = createServer((req, res) => {
         const probs = fs.readdirSync("./problems", { withFileTypes: true }).filter((item) => item.isDirectory()).map((item) => item.name);
         var list = "";
         for (var i=0; i<probs.length; ++i){
-            list += "<p>Problem ID: " + probs[i] + " <a href='problems/" + probs[i] + "/statement.txt'>View Statement</a>\n";
+            list += "<p>Problem ID: " + probs[i] + " (<a href='problems/" + probs[i] + "/statement.txt'>View Statement</a>)\n";
         }
         res.writeHead(200);
         res.end(list);

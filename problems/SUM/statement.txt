@@ -1,0 +1,27 @@
+Problem: SUM
+
+Limits:
+Time=1s, Memory=256mb
+
+Statement:
+You have "n" queries to process. Each query contains positive integers "l" and "r". Respond with the sum of all integers between "l" and "r" inclusive.
+
+Input Format:
+First line contains integer "n" (1<=n<=1e6)
+Next "n" lines each contain integer "l" and "r" (1<=l<r<=1e9)
+
+Output Format:
+For each query, output a single integer which is the sum of all integers between "l" and "r" inclusive.
+
+Sample Input:
+2
+1 4
+2 3
+
+Sample Output:
+10
+5
+
+Sample Explanation:
+For query 1, "l" is 1 and "r" is 4. Therefore the answer is 1+2+3+4 = 10
+For query 2, "l" is 2 and "r" is 3. Therefore the answer is 2+3 = 5

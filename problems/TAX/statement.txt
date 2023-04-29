@@ -1,7 +1,7 @@
-Problem: Tax
+Problem: TAX
 
 Limits:
-Time=1s Memory=256mb
+Time=1s, Memory=256mb
 
 Statement:
 In Farmer John's town, money is issued in bills with denominations in powers of 2, starting from 1. Farmer John needs to pay a list of "n" taxes. For each tax amount, what is the minimum amount of bills he can use?
