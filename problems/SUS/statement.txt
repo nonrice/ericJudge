@@ -1,0 +1,27 @@
+Problem: SUS
+
+Limits:
+Time=1s, Memory=256mb
+
+Statement:
+College Board is making the multiple choice section of a test. The answer key to a multiple choice section can be represented by a string "s" of length "n" containing characters from a to e, inclusive. College Board defines the suspiciousness of an answer key as the total number of consecutive pairs that share the same answer. Given an answer key length with lenght "n" and an integer "k", print the total number of possible answer keys with suspiciousness equal to exactly "k". Because the answer may be huge, print it modulo 998244353.
+
+Input Format:
+First line contains integer "t", the number of independent test cases (1<=t<=2e5).
+Next "t" lines each contain an independent test case, made up of integers "n" and "k" (1<=n<=2e5, 0<=k<n<=2e5).
+
+Output Format:
+For each test case, print the answer modulo 998244353.
+
+Sample Input:
+2
+4 2
+10 9
+
+Sample Output:
+40
+5
+
+Sample Explanation:
+For testcase 1, one possible answer key with length 4 that has suspiciousness 2 could be "aaad", because there are 2 pairs of matching consecutive characters in this string.
+
