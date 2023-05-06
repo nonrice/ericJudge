@@ -19,7 +19,7 @@ Sample Input:
 10 9
 
 Sample Output:
-40
+60
 5
 
 Sample Explanation:

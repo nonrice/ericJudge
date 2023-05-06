@@ -7,8 +7,8 @@ Statement:
 You have "n" queries to process. Each query contains positive integers "l" and "r". Respond with the sum of all integers between "l" and "r" inclusive.
 
 Input Format:
-First line contains integer "n" (1<=n<=1e6)
-Next "n" lines each contain integer "l" and "r" (1<=l<r<=1e9)
+First line contains integer "n" (1<=n<=1e6).
+Next "n" lines each contain integer "l" and "r" (1<=l<r<=1e9).
 
 Output Format:
 For each query, output a single integer which is the sum of all integers between "l" and "r" inclusive.
