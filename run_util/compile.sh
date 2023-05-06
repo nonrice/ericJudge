@@ -4,7 +4,7 @@
 
 sub=$(mktemp)
 
-g++ $1 -std=c++17 -o "$sub" &> /dev/null
+g++ $1 -O2 -std=c++17 -o "$sub" &> /dev/null
 if [ "$?" -ne 0 ]; then
     echo "Compile Error"
 else
