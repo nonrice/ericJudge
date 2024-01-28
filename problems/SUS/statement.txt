@@ -4,7 +4,7 @@ Limits:
 Time=1s, Memory=256mb
 
 Statement:
-College Board is making the multiple choice section of a test. The answer key to a multiple choice section can be represented by a string "s" of length "n" containing characters from a to e, inclusive. College Board defines the suspiciousness of an answer key as the total number of consecutive pairs that share the same answer. Given an answer key length with lenght "n" and an integer "k", print the total number of possible answer keys with suspiciousness equal to exactly "k". Because the answer may be huge, print it modulo 998244353.
+College Board is making the multiple choice section of a test. The answer key to a multiple choice section can be represented by a string "s" of length "n" containing characters from a to e, inclusive. College Board defines the suspiciousness of an answer key as the total number of consecutive pairs that share the same answer. Given an answer key length with length "n" and an integer "k", print the total number of possible answer keys with suspiciousness equal to exactly "k". Because the answer may be huge, print it modulo 998244353.
 
 Input Format:
 First line contains integer "t", the number of independent test cases (1<=t<=2e5).
